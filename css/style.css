@@ -14,12 +14,18 @@ h3,
 h4 {
   font-family: "Nunito", sans-serif;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
   max-width: 100%;
   /* width: 370px; */
   padding: 0 15px;
   margin: 0 auto;
 }
+
 a {
   text-decoration: none;
 }
@@ -221,6 +227,12 @@ button {
   height: 100px;
 }
 /* .....................POINT................. */
+@media (min-width: 360px) {
+  .container {
+    max-width: 360px;
+  }
+}
+
 @media screen and (min-width: 1270px) {
   .container {
     max-width: 1270px;
