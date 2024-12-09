@@ -5,6 +5,9 @@
   padding: 0;
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Quicksand", sans-serif;
 }
@@ -65,6 +68,8 @@ button {
 .header-burger {
   border: none;
   background-color: transparent;
+  display: block;
+  margin-left: auto;
 }
 .header-list {
   display: none;
@@ -221,10 +226,301 @@ button {
   margin-bottom: 27px;
 }
 .service-dec {
-  border-radius: 100%;
-  color: #377dff;
+  border-radius: 50%;
+  background-color: #377dff;
   width: 100px;
   height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-list-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #1d1d1d;
+  max-width: 104px;
+  margin-top: 27px;
+}
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+}
+.service-list-item {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  width: 262px;
+  box-shadow: 4px 4px 30px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 35px 79px 59px;
+}
+.service-dec-red {
+  background-color: #ff2d2d;
+}
+.service-dec-green {
+  background-color: #7ce761;
+}
+.service-dec-orange {
+  background-color: #ffa800;
+}
+/* ........................Porfolio................ */
+.porfolio-section {
+  padding-bottom: 50px;
+}
+.porfolio-link {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #377dff;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.porfolio-title {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1d1d1d;
+  margin-bottom: 34px;
+}
+.porfolio-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #464646;
+  margin-bottom: 34px;
+}
+.porfolio-img {
+  width: 300px;
+  height: 300px;
+  transition: 500ms;
+}
+.porfolio-img:hover {
+  width: 340px;
+  height: 340px;
+}
+.porfolio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.porfolio-list-item {
+  position: relative;
+}
+.porfolio-img-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0em;
+  color: #fff;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+.porfolio-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #377dff;
+  border: 1px solid #377dff;
+  border-radius: 24px;
+  width: 196px;
+  height: 44px;
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+}
+.porfolio-container {
+  padding-bottom: 53px;
+}
+/* ...........................Testimonial................ */
+.testimonial-section {
+  padding-bottom: 100px;
+}
+.testimonial-link {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #377dff;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.testimonial-title {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1d1d1d;
+  margin-bottom: 35px;
+}
+.testimonial-list-item {
+  border-radius: 20px;
+  width: 340px;
+  height: 257px;
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.05);
+  background: #fff;
+  padding: 40px 20px 40px 40px;
+}
+.angel-rose {
+  width: 70px;
+  height: 70px;
+}
+.rose-name {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  color: #377dff;
+  margin-bottom: 7px;
+}
+.rose-position {
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.01em;
+  color: #464646;
+  opacity: 0.5;
+}
+.rose-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  color: #464646;
+  opacity: 0.8;
+}
+.testimonial-wrap {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 34px;
+}
+.testimonial-list-item-app {
+  display: none;
+}
+/* .......................SECTION............. */
+.presentation-img {
+  width: 180px;
+  height: 177px;
+  margin-left: auto;
+}
+.wrapper {
+  position: relative;
+  margin-bottom: 140px;
+}
+.people-img {
+  width: 221px;
+  height: 196px;
+  border-radius: 16px;
+  position: absolute;
+  top: 78px;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.3;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1d1d1d;
+  margin-bottom: 25px;
+}
+.section-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.4;
+  letter-spacing: 0.01em;
+  color: #464646;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.section-button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #fff;
+  border-radius: 24px;
+  width: 140px;
+  height: 38px;
+  box-shadow: 0 4px 8px 0 rgba(55, 125, 255, 0.5);
+  background: #377dff;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+.section-container {
+  padding-bottom: 100px;
+}
+/* ...................FOOTER................ */
+.footer {
+  background: #383638;
+  padding-top: 45px;
+  padding-bottom: 60px;
+}
+.footer-logo {
+  border-radius: 20px;
+  width: 187px;
+  height: 88px;
+  margin-bottom: 80px;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-list-item-app {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #fff;
+}
+.footer-list-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #fff;
+}
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.footer-icons {
+  border-radius: 100%;
+  background-color: #fff;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-list-ikons {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.footer-bottom {
+  border: 1px solid #fff;
+  width: 390px;
+  height: 0px;
+  margin-bottom: 20px;
+}
+.footer-end {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  width: 352px;
 }
 /* .....................POINT................. */
 @media (min-width: 360px) {
@@ -292,5 +588,189 @@ button {
     height: 501px;
     display: block;
     margin: 0 auto;
+  }
+  /* .........................ABOUT................. */
+  .about-link {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 100%;
+  }
+  .about.title {
+    font-size: 55px;
+    margin-bottom: 38px;
+  }
+  .about-text {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 610px;
+  }
+  .about-text-app {
+    margin-bottom: 24px;
+  }
+  .about-btn {
+    width: 171px;
+    height: 48px;
+    font-size: 16px;
+  }
+  .about-button {
+    border: 1px solid #377dff;
+    width: 210px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 25px;
+  }
+  .about-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 65px;
+    align-items: center;
+  }
+  .about-img {
+    border-radius: 24px;
+    width: 565px;
+    height: 402px;
+  }
+  /* ........................SERVICE................... */
+  .service-container {
+    display: flex;
+    align-items: center;
+  }
+  .service-link {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 32px;
+    text-align: start;
+  }
+  .service-title {
+    font-size: 55px;
+    line-height: 130%;
+    color: #1d1d1d;
+    margin-bottom: 18px;
+    text-align: start;
+  }
+  .service-text {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 520px;
+    text-align: start;
+    margin-bottom: 36px;
+  }
+  .service-wrap {
+    position: relative;
+  }
+  .service-read {
+    font-size: 20px;
+    line-height: 1.7;
+    position: absolute;
+    right: 0;
+  }
+  .service-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  /* ......................PORTFOLIO.................. */
+  .porfolio-link {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  .porfolio-title {
+    margin-bottom: 28px;
+    font-size: 55px;
+  }
+  .porfolio-text {
+    font-size: 20px;
+    max-width: 674px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .porfolio-list {
+    flex-direction: row;
+    gap: 70px;
+    justify-content: center;
+  }
+  .porfolio-img {
+    width: 350px;
+    height: 350px;
+  }
+  .porfolio-btn {
+    width: 226px;
+    height: 48px;
+  }
+  .porfolio-container {
+    padding-bottom: 140px;
+  }
+  /* ...........................TESTIMONIAL................. */
+  .testimonial-section {
+    padding-bottom: 250px;
+  }
+  .testimonial-link {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  .testimonial-title {
+    font-size: 55px;
+    margin-bottom: 50px;
+  }
+  .testimonial-list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  .testimonial-list-item-app {
+    display: block;
+  }
+  /* ..........................SECTION................. */
+  .section-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 178px;
+  }
+  .section-title {
+    font-size: 55px;
+    line-height: 1.3;
+    max-width: 491px;
+    text-align: start;
+  }
+  .section-text {
+    font-size: 20px;
+    line-height: 1.7;
+    text-align: start;
+  }
+  .section-button {
+    width: 193px;
+    height: 48px;
+    font-size: 16px;
+    margin-left: 0;
+  }
+  .presentation-img {
+    width: 294px;
+    height: 288px;
+  }
+  .people-img {
+    width: 325px;
+    height: 288px;
+    top: 91px;
+    right: 262px;
+  }
+  /* ..........................FOOTER................. */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-bottom {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .footer-end {
+    margin: 0 auto;
+  }
+  .footer-wrap {
+    gap: 200px;
   }
 }
